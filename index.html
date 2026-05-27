@@ -1,1 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoonBean Coffee</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#F5E9DA;
+color:#3B2416;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#C98B5F;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+text-align:center;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:20px;
+}
+
+footer{
+background:#3B2416;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+.socials a{
+color:#F5E9DA;
+margin:0 10px;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>MoonBean Coffee</h1>
+
+<p>Уютное место, где каждый кофе становится маленьким моментом счастья</p>
+
+<a href="#menu" class="btn">Наше меню</a>
+
+</div>
+
+</section>
+
+
+<section class="section container" id="menu">
+
+<h2 class="section-title">Наши напитки</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="product1.jpg">
+
+<div class="card-content">
+<h3>Карамельный латте</h3>
+<p>Нежный вкус, ароматный кофе и карамельные нотки.</p>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="product2.jpg">
+
+<div class="card-content">
+<h3>Холодный кофе</h3>
+<p>Освежающий напиток для жаркого дня.</p>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="product3.jpg">
+
+<div class="card-content">
+
+<h3>Десертный кофе</h3>
+
+<p>Сладкий вкус и шоколадное настроение.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section container">
+
+<h2 class="section-title">Почему выбирают нас</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<h3>☕ Премиальные зерна</h3>
+
+<p>Только качественный кофе.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🏠 Уютная атмосфера</h3>
+
+<p>Идеальное место для отдыха.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>📶 Бесплатный Wi-Fi</h3>
+
+<p>Для учебы и работы.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<h2>Контакты</h2>
+
+<div class="socials">
+
+<a href="https://t.me/moonbean">Telegram</a>
+
+<a href="https://instagram.com/moonbean">Instagram</a>
+
+<a href="https://vk.com/moonbean">VK</a>
+
+<a href="mailto:coffee@moonbean.com">Email</a>
+
+</div>
+
+<p style="margin-top:25px;">
+© 2026 MoonBean Coffee
+</p>
+
+</footer>
+
+</body>
+</html>
